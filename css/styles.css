@@ -2,24 +2,25 @@
 *{
     box-sizing: border-box;
 }
-html, body{
+ body{
     font-family: 'Sono', monospace;
     font-size: 16px;
     line-height: 1.6;
     color: #333;
     margin: 0 auto;
     padding: 0;
-    width: 70%;
-    
+    width: 50%;
+    height: auto;
+    min-width: 300px;
 }
 main > section{
-    margin: 20px 0;
+    margin: 10px 0;
     background-color: #f4f4f4;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    min-width: 400px ;
+    min-width: 300px ;
     width: 100%;
 }
 ul{
@@ -27,7 +28,7 @@ ul{
     margin: 20px 0;
     display: flex;
     justify-content: space-around;
-    min-width: 400px ;
+    min-width: 300px ;
 }
 li
 {
@@ -45,6 +46,10 @@ a:hover{
     width: 90%;
     padding: 0 auto;
     
+}
+
+.colors-section section h3{
+    margin-left: 30px;
 }
 
 .color-box{
@@ -76,7 +81,7 @@ a:hover{
 
 .colors-section article{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 10px;
 }
 
@@ -95,7 +100,7 @@ a:hover{
 .fonts-section div{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 
