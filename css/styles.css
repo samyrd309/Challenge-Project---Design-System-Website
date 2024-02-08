@@ -45,7 +45,7 @@ a:hover{
 .colors-section section{
     width: 90%;
     padding: 0 auto;
-    
+    margin-bottom: 20px;
 }
 
 .colors-section section h3{
@@ -102,10 +102,29 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
+    padding-inline: 20px;
 }
 
+.fonts-section div h3{
+    text-align: center;
+    margin: 20px 0;
+}
 
-.fonts-section{}
+.fonts-section div p{
+    text-align: wrap;
+}
+
+.fonts-section div section{
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 200px ;
+    width: 100%;
+
+}
+
+.fonts-section div section hr	{
+    margin:0;
+}
 
 .textstyle-section{}
 
