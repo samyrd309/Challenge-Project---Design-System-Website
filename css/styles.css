@@ -1,6 +1,8 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
  body{
     font-family: 'Sono', monospace;
@@ -42,19 +44,27 @@ a:hover{
     text-decoration: underline;
 }
 
+h1, h2, h3, h4, h5, h6{
+    margin: 10px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+p{
+    text-wrap: pretty;
+}
+
 .colors-section section{
     width: 90%;
     padding: 0 auto;
     margin-bottom: 20px;
 }
 
-.colors-section section h3{
-    margin-left: 30px;
-}
+
 
 .color-box{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -81,7 +91,7 @@ a:hover{
 
 .colors-section article{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 10px;
 }
 
@@ -95,37 +105,83 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-}
+    width: 100%;
+    padding: 20px;
+
+}zz
 
 .fonts-section div{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-    padding-inline: 20px;
 }
+
 
 .fonts-section div h3{
     text-align: center;
     margin: 20px 0;
 }
 
-.fonts-section div p{
-    text-align: wrap;
-}
-
-.fonts-section div section{
-    border-radius: 5px;
-    padding: 10px;
-    min-width: 200px ;
+.fonts-section section{
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.fonts-section div section hr	{
-    margin:0;
+.fonts-section section h4{
+    margin: 10px 0;
 }
 
-.textstyle-section{}
+.fonts-section section div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
-.components-section{}
+
+.font-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 250px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    margin: 0 auto;
+
+}	
+
+.font-box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.textstyle-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+}	
+
+.textstyle-section div h1,
+.textstyle-section div h2,
+.textstyle-section div h3,
+.textstyle-section div h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
